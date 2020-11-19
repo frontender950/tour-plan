@@ -1,6 +1,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: none;
 }
 
 body {
@@ -398,6 +399,23 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #333333;
+  background-color: #F5FAFE;
+}
+
+.search ::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.search :-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.search ::-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.search ::placeholder {
+  color: #BDBDBD;
 }
 
 .search__button {
@@ -408,6 +426,7 @@ template {
   top: 0;
   right: 0;
   border: none;
+  cursor: pointer;
 }
 
 .user {
@@ -429,7 +448,7 @@ template {
 }
 
 .user__name {
-  font-style: 14px;
+  font-size: 14px;
   line-height: 18px;
   color: #333333;
   margin-left: 18px;

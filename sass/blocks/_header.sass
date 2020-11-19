@@ -24,6 +24,9 @@
     font-size: 12px
     line-height: 15px
     color: $text-color
+    background-color: #F5FAFE
+  ::placeholder
+    color: $color-input
   &__button
     position: absolute
     background-color: $primary
@@ -32,6 +35,7 @@
     top: 0
     right: 0
     border: none
+    cursor: pointer
 .user
   display: flex
   align-items: center
@@ -42,7 +46,7 @@
     border-radius: 50%
     object-fit: cover
   &__name
-    font-style: 14px
+    font-size: 14px
     line-height: 18px
     color: $text-color
     margin-left: 18px

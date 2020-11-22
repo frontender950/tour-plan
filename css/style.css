@@ -525,6 +525,85 @@ template {
   text-decoration: none;
 }
 
+.hotel {
+  padding-top: 23px;
+  padding-bottom: 70px;
+}
+
+.hotel-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hotel__stars {
+  margin-bottom: 4px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.hotel-name {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+  margin-right: 14px;
+}
+
+.hotel-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.offer {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 13px;
+  border-radius: 3px;
+  background-color: #EC1F46;
+  color: #ffffff;
+  padding: 4px 9px;
+}
+
+.description {
+  margin: 0;
+  font-size: 12px;
+  line-height: 15px;
+  color: #333333;
+}
+
+.rating {
+  max-width: 65px;
+  min-height: 45px;
+  background-color: #EC1F46;
+  color: #ffffff;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.rating__text {
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+}
+
+.rating__counter {
+  font-size: 14px;
+  line-height: 18px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -592,6 +671,49 @@ template {
     color: #333333;
     width: 16px;
     border: 1px solid #333333;
+  }
+  .hotel {
+    padding-top: 5px;
+    padding-bottom: 40px;
+  }
+  .hotel-name {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .hotel-info__text {
+    width: 100%;
+  }
+  .hotel-wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hotel__stars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-bottom: 16px;
+  }
+  .hotel__stars-item {
+    margin-left: 4px;
+  }
+  .hotel-name {
+    margin-right: 0;
+  }
+  .rating {
+    display: none;
+  }
+  .offer {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 10px;
   }
 }
 

@@ -45,6 +45,30 @@
         color: $text-color
         width: 16px
         border: 1px solid $text-color
+  .hotel
+    padding-top: 5px
+    padding-bottom: 40px
+    &-name
+      flex-basis: 100%
+    &-info
+      &__text
+        width: 100%
+    &-wrapper
+      justify-content: space-between
+    &__stars
+      display: flex
+      flex-direction: row-reverse
+      flex-basis: 50%
+      margin-bottom: 16px
+      &-item
+        margin-left: 4px
+    &-name
+      margin-right: 0
+  .rating
+    display: none
+  .offer
+    order: -1
+    margin-bottom: 10px
 @media ( max-width: 576px)
   .logo
     width: 99px

@@ -9,4 +9,8 @@ var mySwiper = new Swiper('.swiper-container', {
   },
   speed: 400,
   effect: 'coverflow',
+    keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
 })

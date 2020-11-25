@@ -644,8 +644,16 @@ template {
   z-index: 8;
 }
 
+.hotel-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .slider {
+  margin-right: 30px;
   width: 728px;
+  min-height: 450px;
 }
 
 .slider-button {
@@ -673,6 +681,15 @@ template {
 .slider-button--prev {
   left: 18px;
   background-image: url(../img/arrow-prev.svg);
+}
+
+.booking {
+  max-width: 350px;
+  min-height: 210px;
+  background: #0A223D;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 28px;
 }
 
 @media (max-width: 1200px) {

@@ -112,19 +112,19 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <img src="img/slider-1.jpg" alt="hotel-1">
+              <img class="swiper-slide__item" src="img/slider-1.jpg" alt="hotel-1">
             </div>
             <div class="swiper-slide">
-              <img src="img/slider-2.jpg" alt="hotel-2">
+              <img class="swiper-slide__item" src="img/slider-2.jpg" alt="hotel-2">
             </div>
             <div class="swiper-slide">
-              <img src="img/slider-3.jpg" alt="hotel-3">
+              <img class="swiper-slide__item" src="img/slider-3.jpg" alt="hotel-3">
             </div>
             <div class="swiper-slide">
-              <img src="img/slider-4.jpg" alt="hotel-3">
+              <img class="swiper-slide__item" src="img/slider-4.jpg" alt="hotel-3">
             </div>
             <div class="swiper-slide">
-              <img src="img/slider-5.jpg" alt="hotel-3">
+              <img class="swiper-slide__item" src="img/slider-5.jpg" alt="hotel-3">
             </div>
           </div>
 
@@ -135,43 +135,52 @@
         </div>
         <!-- /.swiper-container -->
       </div>
-      <div class="booking">
-        <div class="booking__info">
-
-          <div class="booking__price">
-            <span class="booking__start">price starts as</span>
-            <strong class="booking__pricetag">8500</strong>
-            <span class="booking__end">per room / night</span>
-          </div>
-
-          <div class="person-room">
-            <div class="person-room__text">
-              <img src="img/user.svg" alt="icon user" class="person-room__icon">
-              <span class="person-room__description">2 x Guests</span>
+      
+      <div class="booking-map">
+        <div class="booking">
+          <div class="booking__info">
+        
+            <div class="booking__price">
+              <span class="booking__start">price starts as</span>
+              <strong class="booking__pricetag">$ 8,500</strong>
+              <span class="booking__end">per room / night</span>
             </div>
-            <div class="person-room__text">
-              <img src="img/home.svg" alt="icon home" class="person-room__icon">
-              <span class="person-room__description">1 x Room</span>
+        
+            <div class="booking__room">
+              <div class="booking__text">
+                <img src="img/user.svg" alt="icon user" class="booking__icon">
+                <span class="booking__description">2 x Guests</span>
+              </div>
+              <div class="booking__text">
+                <img src="img/home.svg" alt="icon home" class="booking__icon">
+                <span class="booking__description">1 x Room</span>
+              </div>
             </div>
+        
           </div>
-
-        </div>
-
-        <div class="call-center">
-          <span class="call-center__text">Quick Booking</span>
+        
+          <div class="call-center">
+            <span class="call-center__text">Quick Booking</span>
             <a class="call-center__number" href="tel:12100">
               <img src="img/phone.svg" alt="icon phone" class="call-center__icon">
               <span class="call-center__num">12100</span>
-            </a>    
+            </a>
+          </div>
+        
+          <button class="button booking__button">View Other Options</button>
         </div>
-
-        <button class="button booking__button">View Other Options</button>
+        <!-- /.booking -->
+        <div class="map">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae50185dbb854a15162ee1668a2cf6d41a535c08641cd5e63352879ac03b9e506&amp;source=constructor"
+            width="347" height="213" frameborder="0"></iframe>
+        </div>  
       </div>
-      <!-- /.slider -->
+      <!-- /.booking-map -->
     </div>
     <!-- /.hotel-grid -->
-  <!-- /.container -->
   </div>
+  <!-- /.container -->
 </section>
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>

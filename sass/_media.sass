@@ -8,7 +8,8 @@
       &__item
         height: 100%
 @media ( max-width: 992px)
-  .container
+  .container,
+  .newsletter-wrapper
     max-width: 700px
   .logo
     width: 132px
@@ -103,6 +104,12 @@
     width: 100%
   .map
     width: 100%
+  .newsletter
+    &-wrapper
+      flex-direction: column
+      max-width: 576px
+      width: 92%
+      align-items: start
 @media ( max-width: 576px)
   .logo
     width: 99px
@@ -111,3 +118,11 @@
   .hotel
     &__slider
       margin-bottom: 20px
+  .newsletter
+    padding-top: 76px
+    padding-bottom: 83px
+    &-tittle
+      margin-top: 0
+      margin-bottom: 37px
+  .subscribe
+    width: 100%

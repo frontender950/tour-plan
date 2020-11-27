@@ -637,7 +637,7 @@ template {
 .swiper-container {
   position: relative;
   width: 100%;
-  height: 450px;
+  height: 100%;
   border-radius: 8px;
 }
 
@@ -655,6 +655,7 @@ template {
 
 .slider {
   max-width: 728px;
+  height: 450px;
 }
 
 .slider-button {
@@ -976,10 +977,32 @@ template {
             order: -1;
     margin-bottom: 10px;
   }
+  .slider {
+    height: 350px;
+  }
+  .right-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 450px;
+  }
+  .booking {
+    width: 100%;
+  }
+  .map {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
   .logo {
     width: 99px;
+  }
+  .slider {
+    height: 250px;
+  }
+  .hotel__slider {
+    margin-bottom: 20px;
   }
 }

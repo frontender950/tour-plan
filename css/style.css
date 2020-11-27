@@ -706,6 +706,7 @@ template {
 }
 
 .booking {
+  font-family: Nunito, sans-serif;
   width: 340px;
   height: 210px;
   background: #0A223D;
@@ -735,6 +736,7 @@ template {
 }
 
 .booking__start {
+  font-weight: 400;
   font-size: 10px;
   line-height: 14px;
 }
@@ -746,12 +748,14 @@ template {
 }
 
 .booking__end {
+  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
 }
 
 .booking__room {
   margin-top: 4px;
+  font-weight: 400;
 }
 
 .booking__text {
@@ -789,6 +793,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 17px;
+  font-weight: 600;
 }
 
 .booking .call-center__text {
@@ -819,6 +824,7 @@ template {
   height: 45px;
   font-size: 14px;
   line-height: 19px;
+  font-weight: 600;
   color: #ffffff;
   background: #EC1F46;
   border-radius: 4px;

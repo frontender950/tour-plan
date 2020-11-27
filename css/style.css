@@ -839,6 +839,112 @@ template {
   overflow: hidden;
 }
 
+.newsletter {
+  position: relative;
+  padding: 98px 0 87px;
+  background-image: url(../img/newsletter-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.newsletter::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 34, 61, 0.8);
+}
+
+.newsletter-wrapper {
+  position: relative;
+  max-width: 731px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.newsletter-tittle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.newsletter-tittle__strong {
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 45px;
+}
+
+.subscribe {
+  position: relative;
+  width: 355px;
+  height: 55px;
+  border: none;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.subscribe__input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-left: 33px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  padding-right: 75px;
+}
+
+.subscribe ::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.subscribe :-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.subscribe ::-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.subscribe ::placeholder {
+  color: #BDBDBD;
+}
+
+.subscribe__button {
+  position: absolute;
+  color: #ffffff;
+  background-color: #EC1F46;
+  height: 100%;
+  min-width: 65px;
+  right: 0;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;

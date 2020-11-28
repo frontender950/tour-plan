@@ -899,9 +899,14 @@ template {
 }
 
 .subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   position: relative;
   width: 350px;
-  height: 55px;
+  min-height: 55px;
   border: none;
   border-radius: 4px;
   overflow: hidden;
@@ -936,10 +941,12 @@ template {
 
 .subscribe__button {
   position: absolute;
+  width: 65px;
+  min-height: 55px;
+  overflow: visible;
   color: #ffffff;
   background-color: #EC1F46;
   height: 100%;
-  min-width: 65px;
   right: 0;
   font-size: 12px;
   line-height: 15px;
@@ -952,7 +959,7 @@ template {
   .container {
     max-width: 960px;
   }
-  .slider {
+  .hotel__slider {
     width: 600px;
   }
   .swiper-slide__item {

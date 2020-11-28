@@ -894,6 +894,8 @@ template {
   text-transform: uppercase;
   font-size: 36px;
   line-height: 45px;
+  font-weight: 600;
+  margin-top: 5px;
 }
 
 .subscribe {
@@ -1158,6 +1160,12 @@ template {
   .newsletter-tittle {
     margin-top: 0;
     margin-bottom: 37px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newsletter-tittle__strong {
+    font-size: 30px;
+    line-height: 38px;
   }
   .subscribe {
     width: 100%;

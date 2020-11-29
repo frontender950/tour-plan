@@ -580,6 +580,13 @@ template {
   margin-right: 14px;
 }
 
+.hotel__description {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #333333;
+}
+
 .hotel-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -599,14 +606,6 @@ template {
   background-color: #EC1F46;
   color: #ffffff;
   padding: 4px 9px;
-}
-
-.description {
-  margin: 0;
-  font-size: 12px;
-  line-height: 15px;
-  color: #333333;
-  margin-bottom: 20px;
 }
 
 .rating {
@@ -708,7 +707,7 @@ template {
 
 .booking {
   font-family: Nunito, sans-serif;
-  width: 340px;
+  width: 350px;
   height: 210px;
   background: #0A223D;
   border-radius: 8px;
@@ -778,11 +777,6 @@ template {
   height: 12px;
 }
 
-.booking__description {
-  font-size: 12px;
-  line-height: 16px;
-}
-
 .booking .call-center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -834,7 +828,7 @@ template {
 }
 
 .map {
-  width: 340px;
+  width: 350px;
   height: 213px;
   border-radius: 8px;
   overflow: hidden;
@@ -894,6 +888,10 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .booking {
+    width: 340px;
+    height: 210px;
   }
   .map {
     width: 340px;
@@ -1003,6 +1001,12 @@ template {
   }
   .map {
     width: 100%;
+    height: 210px;
+  }
+  .map__frame {
+    width: 100%;
+    height: 100%;
+    border: none;
   }
 }
 
@@ -1016,21 +1020,35 @@ template {
   .hotel {
     padding-bottom: 40px;
   }
+  .hotel__description {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
   .hotel__slider {
     width: 100%;
     height: 180px;
     margin-bottom: 20px;
   }
+  .right-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-height: 403px;
+  }
   .booking {
+    height: 210px;
     padding-top: 29px;
     padding-bottom: 26px;
   }
-  .right-block {
-    width: 100%;
-    min-height: 403px;
-  }
   .map {
     width: 100%;
-    height: 172px;
+    height: 173px;
   }
 }

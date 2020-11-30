@@ -1006,6 +1006,32 @@ template {
   top: 118px;
 }
 
+.rewiews-slider__button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  border: none;
+  background-color: #F5FAFE;
+  background-position: center;
+  cursor: pointer;
+  z-index: 50;
+}
+
+.rewiews-slider__button--prev {
+  background-image: url(../img/arrow-secondary-prev.svg);
+  left: 0;
+}
+
+.rewiews-slider__button--next {
+  background-image: url(../img/arrow-secondary-next.svg);
+  right: 0;
+}
+
 .rewiews-slider__profile {
   display: -webkit-box;
   display: -ms-flexbox;

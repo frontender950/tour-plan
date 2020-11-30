@@ -18,7 +18,7 @@ var rewiewsSlider = new Swiper('.rewiews-slider', {
   loop: true,
   // Navigation arrows
   navigation: {
-    nextEl: '.hotel-slider__button--next',
-    prevEl: '.hotel-slider__button--prev',
+    nextEl: '.rewiews-slider__button--next',
+    prevEl: '.rewiews-slider__button--prev',
   },
 })

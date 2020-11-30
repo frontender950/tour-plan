@@ -950,6 +950,122 @@ template {
   cursor: pointer;
 }
 
+.rewiews {
+  padding: 40px 0 70px 0;
+}
+
+.rewiews__tittle {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  margin-top: 0;
+  margin-bottom: 70px;
+}
+
+.rewiews-slider__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  width: 730px;
+  margin: 45px auto 0;
+  padding: 0 62px 30px;
+}
+
+.rewiews-slider__item:before {
+  content: '';
+  position: absolute;
+  background-image: url(../img/quote-left.svg);
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 47px;
+  left: 62px;
+  top: 13px;
+}
+
+.rewiews-slider__item:after {
+  content: '';
+  position: absolute;
+  background-image: url(../img/quote-right.svg);
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 47px;
+  right: 62px;
+  top: 118px;
+}
+
+.rewiews-slider__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+  margin-top: -45px;
+}
+
+.rewiews-slider__avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 9px;
+}
+
+.rewiews-slider__username {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #EC1F46;
+}
+
+.rewiews-slider__date {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
+  color: #333333;
+  margin-bottom: 4px;
+}
+
+.rewiews-slider__stars {
+  width: 6px;
+  height: 6px;
+}
+
+.rewiews-slider__text {
+  margin: 0;
+  max-width: 537px;
+  min-height: 114px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 160%;
+  text-align: justify;
+  color: #333333;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;

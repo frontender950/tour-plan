@@ -1,0 +1,80 @@
+.rewiews
+  padding: 40px 0 70px 0
+  &__tittle
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    color: $text-color
+    margin-top: 0
+    margin-bottom: 70px
+  &-slider
+    &__item
+      position: relative
+      display: flex
+      flex-direction: column
+      align-items: center
+      background-color: $text-light
+      border-radius: 8px
+      width: 730px
+      margin: 45px auto 0
+      padding: 0 62px 30px
+      &:before
+        content: ''
+        position: absolute
+        background-image: url(../img/quote-left.svg)
+        background-repeat: no-repeat
+        width: 70px
+        height: 47px
+        left: 62px
+        top: 13px
+      &:after
+        content: ''
+        position: absolute
+        background-image: url(../img/quote-right.svg)
+        background-repeat: no-repeat
+        width: 70px
+        height: 47px
+        right: 62px
+        top: 118px
+    &__profile
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-bottom: 32px
+      margin-top: -45px
+    &__avatar
+      width: 90px
+      height: 90px
+      border-radius: 50%
+      object-fit: cover
+      margin-bottom: 9px
+    &__username
+      margin-top: 0
+      margin-bottom: 10px
+      font-weight: bold
+      font-size: 12px
+      line-height: 15px
+      color: $primary
+    &__date
+      font-family: Mulish
+      font-style: normal
+      font-weight: normal
+      font-size: 10px
+      line-height: 13px
+      color: $text-color
+      margin-bottom: 4px
+    &__stars
+      width: 6px
+      height: 6px
+    &__text
+      margin: 0
+      max-width: 537px
+      min-height: 114px
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 160%
+      text-align: justify
+      color: $text-color

@@ -107,36 +107,33 @@
     </div>
     <div class="hotel-grid">
 
-      <div class="slider hotel__slider">
-        <!-- Slider main container -->
-        <div class="swiper-container">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <img class="swiper-slide__item" src="img/slider-1.jpg" alt="hotel-1">
-            </div>
-            <div class="swiper-slide">
-              <img class="swiper-slide__item" src="img/slider-2.jpg" alt="hotel-2">
-            </div>
-            <div class="swiper-slide">
-              <img class="swiper-slide__item" src="img/slider-3.jpg" alt="hotel-3">
-            </div>
-            <div class="swiper-slide">
-              <img class="swiper-slide__item" src="img/slider-4.jpg" alt="hotel-3">
-            </div>
-            <div class="swiper-slide">
-              <img class="swiper-slide__item" src="img/slider-5.jpg" alt="hotel-3">
-            </div>
+      <div class="swiper-container hotel-slider hotel__slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide hotel-slider__item">
+            <img class="swiper-slide__image" src="img/slider-1.jpg" alt="hotel-1">
           </div>
-
-          <!-- If we need navigation buttons -->
-          <button class="slider-button slider-button--prev"></button>
-          <button class="slider-button slider-button--next"></button>
-        
+          <div class="swiper-slide hotel-slider__item">
+            <img class="swiper-slide__image" src="img/slider-2.jpg" alt="hotel-2">
+          </div>
+          <div class="swiper-slide hotel-slider__item">
+            <img class="swiper-slide__image" src="img/slider-3.jpg" alt="hotel-3">
+          </div>
+          <div class="swiper-slide hotel-slider__item">
+            <img class="swiper-slide__image" src="img/slider-4.jpg" alt="hotel-3">
+          </div>
+          <div class="swiper-slide hotel-slider__item">
+            <img class="swiper-slide__image" src="img/slider-5.jpg" alt="hotel-3">
+          </div>
         </div>
-        <!-- /.swiper-container -->
+
+        <!-- If we need navigation buttons -->
+        <button class="hotel-slider__button hotel-slider__button--prev"></button>
+        <button class="hotel-slider__button hotel-slider__button--next"></button>
+      
       </div>
+      <!-- /.swiper-container -->
       
       <div class="right-block">
         <div class="booking">
@@ -180,6 +177,60 @@
     <!-- /.hotel-grid -->
   </div>
   <!-- /.container -->
+</section>
+<section class="newsletter">
+  <div class="newsletter-wrapper">
+    <h2 class="newsletter-tittle">subscribe to our
+      <span class="newsletter-tittle__strong">Newsletter</span>
+    </h2>
+    <form action="#" class="subscribe newsletter__subscribe">
+      <input type="text" class="subscribe__input" placeholder="Your email address">
+      <button class="subscribe__button">Send</button>
+    </form>
+  </div>
+  <!-- /.newsletter-wrapper -->
+</section>
+<!-- /.newsletter -->
+<section class="rewiews">
+<div class="container">
+  <h2 class="rewiews-tittle">What people think about us</h2>
+  <div class="swiper-container rewiews-slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="rewiews-slider__item">
+          <div class="rewiews-slider__profile">
+            <img src="img/rewiews-avatar.jpg" alt="Megan Fox" class="rewiews-slider__avatar">
+            <h3 class="rewiews-slider__username">Megan Fox</h3>
+            <span class="rewiews-slider__date">Stayed 18 Nov, 2019</span>
+            <div class="rewiews-slider__rating">
+              <img class="rewiews-rating__item" src="img/star.svg" alt="star">
+              <img class="rewiews-rating__item" src="img/star.svg" alt="star">
+              <img class="rewiews-rating__item" src="img/star.svg" alt="star">
+              <img class="rewiews-rating__item" src="img/star.svg" alt="star">
+              <img class="rewiews-rating__item" src="img/star.svg" alt="star">
+            </div>
+            <!-- /.rewiews-rating -->
+          </div>
+          <!-- /.rewiews-slider__profile -->
+          <p class="rewiews-slider__text">It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only
+          that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which
+          were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per
+          atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it
+          was a good experience and could recommend.</p>
+        </div>
+        <!-- /.rewiews-slider__item -->
+      </div>
+      <!-- /.swiper-slide -->
+    </div>
+    <!-- /.swiper-wrapper -->
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+  </div>
+  <!-- /.rewiews-slider -->
+</div>
+<!-- /.container -->
 </section>
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>

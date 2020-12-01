@@ -1,14 +1,7 @@
 @media ( max-width: 1200px)
   .container
     max-width: 960px
-  .hotel
-    &__slider
-      width: 600px
-  .swiper
-    &-slide
-      &__item
-        height: 100%
-  .newsletter
+
 @media ( max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -33,19 +26,19 @@
   .hotel
     &-grid
       flex-direction: column
-    &__slider
-      margin-bottom: 30px
-  .slider
-    width: 100%
-  .right-block
-    flex-direction: row
+    &-right
+      flex-direction: row
   .booking
     width: 340px
     height: 210px
   .map
     width: 340px
     height: 210px
-@media ( max-width: 767px)
+  .rewiews
+    &-slider
+      &__item
+        max-width: 580px
+@media ( max-width: 768px)
   .container
     max-width: 576px
     width: 92%
@@ -103,11 +96,10 @@
   .offer
     order: -1
     margin-bottom: 10px
-  .slider
-    height: 350px
-  .right-block
-    flex-direction: column
-    min-height: 450px
+    &-right
+      flex-direction: column
+      min-height: 450px
+
   .booking
     width: 100%
   .map
@@ -123,28 +115,45 @@
       max-width: 576px
       width: 92%
       align-items: start
+  .rewiews
+    &__tittle
+      padding-bottom: 60px
+      margin: 0
+      font-style: normal
+      font-weight: bold
+      font-size: 30px
+      line-height: 38px
+      text-align: center
+      text-transform: uppercase
+      color: $text-color
+    &-slider
+      &__item
+        padding: 0 30px 30px
+        &::after, &::before
+          display: none
+      &__button
+        top: 32px
+        &--prev
+          margin-left: -65px
+          left: 50%
+          transform: translate(-50%, 0)
+        &--next
+          margin-right: -65px
+          right: 50%
+          transform: translate(50%, 0)
 @media ( max-width: 576px)
   .logo
     width: 99px
-  .slider
-    height: 250px
   .hotel
     padding-bottom: 40px
     &__description
       margin-top: 0
       margin-bottom: 20px
-    &__slider
-      width: 100%
-      height: 180px
-      margin-bottom: 20px
-  .booking
-    padding-top: 29px
-    padding-bottom: 26px
-  .right-block
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    min-height: 403px
+    &-right
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      min-height: 403px
   .booking
     height: 210px
     padding-top: 29px
@@ -165,3 +174,12 @@
         line-height: 38px
   .subscribe
     width: 100%
+  .rewiews
+    padding-bottom: 50px
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    text-align: center
+    text-transform: uppercase
+    color: $text-color

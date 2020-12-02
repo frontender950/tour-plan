@@ -1,7 +1,12 @@
 @media ( max-width: 1200px)
   .container
     max-width: 960px
-
+  .hotel-slider
+    max-width: 590px
+  .swiper-slide
+    &__image
+      max-width: 590px
+      height: 450px
 @media ( max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -23,9 +28,18 @@
   .search
     &__input
       width: 340px
+  .hotel-slider
+    height: 450px
+    max-width: 700px
+    margin-bottom: 30px
+  .swiper-slide
+    &__image
+      max-width: 700px
   .hotel
+    padding-bottom: 60px
     &-grid
       flex-direction: column
+      min-height: 450px
     &-right
       flex-direction: row
   .booking
@@ -67,6 +81,12 @@
         width: 16px
         height: 1px
         font-weight: 1px
+  .hotel-slider
+    height: 350px
+  .swiper-slide
+    height: 350px
+    &__image
+      max-width: 700px
   .hotel
     padding-top: 5px
     padding-bottom: 40px
@@ -96,10 +116,16 @@
   .offer
     order: -1
     margin-bottom: 10px
-    &-right
-      flex-direction: column
-      min-height: 450px
-
+  .hotel-right
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    min-height: 450px
+  .swiper-slide
+    &__image
+      max-width: 700px
+      height: 450px
+      object-fit: cover
   .booking
     width: 100%
   .map
@@ -115,6 +141,8 @@
       max-width: 576px
       width: 92%
       align-items: start
+    &-tittle
+      margin-bottom: 37px
   .rewiews
     &__tittle
       padding-bottom: 60px
@@ -144,6 +172,15 @@
 @media ( max-width: 576px)
   .logo
     width: 99px
+  .hotel-slider
+    margin-bottom: 20px
+    width: 100%
+    height: 180px
+  .swiper-slide
+    height: 180px
+    &__image
+      width: 100%
+      height: 180px
   .hotel
     padding-bottom: 40px
     &__description
@@ -153,7 +190,7 @@
       display: flex
       flex-direction: column
       justify-content: space-between
-      min-height: 403px
+      min-height: 405px
   .booking
     height: 210px
     padding-top: 29px

@@ -1162,6 +1162,8 @@ template {
   right: 0;
   top: 0;
   bottom: 0;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -2;
@@ -1206,6 +1208,13 @@ template {
   .swiper-slide__image {
     max-width: 590px;
     height: 450px;
+  }
+  .card {
+    width: 230px;
+    height: 230px;
+  }
+  .card__content {
+    width: 100%;
   }
 }
 
@@ -1269,6 +1278,20 @@ template {
   }
   .rewiews-slider__item {
     max-width: 580px;
+  }
+  .activities {
+    padding-bottom: 50px;
+  }
+  .activities-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .card {
+    width: 340px;
+    height: 255px;
   }
 }
 
@@ -1445,6 +1468,14 @@ template {
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
   }
+  .activities {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .card {
+    width: 49%;
+    height: 255px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1518,5 +1549,15 @@ template {
     text-align: center;
     text-transform: uppercase;
     color: #333333;
+  }
+  .activities-tittle {
+    margin-bottom: 36px;
+  }
+  .card {
+    width: 100%;
+    height: 255px;
+  }
+  .card:last-child {
+    margin: 0;
   }
 }

@@ -1116,6 +1116,102 @@ img {
   color: #333333;
 }
 
+.activities {
+  padding: 60px 0 98px;
+}
+
+.activities-tittle {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 57px;
+  margin-top: 0;
+  font-style: bold;
+  text-transform: uppercase;
+}
+
+.activities-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: 255px;
+  height: 255px;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 24px 26px;
+}
+
+.card:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  z-index: -1;
+}
+
+.card__image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
+}
+
+.card__content {
+  margin-top: auto;
+  width: 203px;
+}
+
+.card__tittle {
+  max-width: 100%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  margin-bottom: 18px;
+  margin-top: 0;
+}
+
+.card__button {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  background-color: #EC1F46;
+  padding: 7px 21px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1126,6 +1222,13 @@ img {
   .swiper-slide__image {
     max-width: 590px;
     height: 450px;
+  }
+  .card {
+    width: 230px;
+    height: 230px;
+  }
+  .card__content {
+    width: 100%;
   }
 }
 
@@ -1200,6 +1303,7 @@ img {
   .rewiews-slider__item {
     max-width: 580px;
   }
+<<<<<<< HEAD
   .rewiews-slider__item::before {
     content: '';
     display: none;
@@ -1207,6 +1311,21 @@ img {
   .rewiews-slider__item::after {
     content: '';
     display: none;
+=======
+  .activities {
+    padding-bottom: 50px;
+  }
+  .activities-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .card {
+    width: 340px;
+    height: 255px;
+>>>>>>> 671482bc75d775eddd3d4b253b550ed31cbfcd30
   }
 }
 
@@ -1385,6 +1504,14 @@ img {
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
   }
+  .activities {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .card {
+    width: 49%;
+    height: 255px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1466,6 +1593,7 @@ img {
     text-transform: uppercase;
     color: #333333;
   }
+<<<<<<< HEAD
   .rewiews__tittle {
     font-style: bold;
     font-size: 23px;
@@ -1501,5 +1629,16 @@ img {
   }
   .hotel-description__break {
     white-space: word-wrap;
+=======
+  .activities-tittle {
+    margin-bottom: 36px;
+  }
+  .card {
+    width: 100%;
+    height: 255px;
+  }
+  .card:last-child {
+    margin: 0;
+>>>>>>> 671482bc75d775eddd3d4b253b550ed31cbfcd30
   }
 }

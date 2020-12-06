@@ -14,12 +14,12 @@ var hotelSlider = new Swiper('.hotel-slider', {
   },
 })
 
-var rewiewsSlider = new Swiper('.rewiews-slide', {
+var rewiewsSlider = new Swiper('.rewiews-slider', {
 
   loop: true,
 
   navigation: {
-    nextEl: '.rewiews-slide__button--next',
-    prevEl: '.rewiews-slide__button--prev',
+    nextEl: '.rewiews-slider__button--next',
+    prevEl: '.rewiews-slider__button--prev',
   },
 })

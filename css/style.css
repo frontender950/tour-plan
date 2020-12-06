@@ -526,11 +526,6 @@ img {
   text-decoration: none;
 }
 
-.swiper-container {
-  height: 450px;
-  max-width: 728px;
-}
-
 .swiper-slide__image {
   width: 100%;
   height: 100%;
@@ -1026,11 +1021,12 @@ img {
   width: 70px;
   height: 47px;
   right: 62px;
+  top: 13px;
 }
 
-.rewiews-slide__button {
+.rewiews-slider__button {
   position: absolute;
-  top: 50%;
+  top: 40%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 30px;
@@ -1044,19 +1040,19 @@ img {
   z-index: 50;
 }
 
-.rewiews-slide__button--prev {
+.rewiews-slider__button--prev {
   background-image: url(../img/arrow-secondary-prev.svg);
   left: 0;
   padding: 6px 10px;
 }
 
-.rewiews-slide__button--next {
+.rewiews-slider__button--next {
   background-image: url(../img/arrow-secondary-next.svg);
   right: 0;
   padding: 6px 10px;
 }
 
-.rewiews-slide__profile {
+.rewiews-slider__profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1071,7 +1067,7 @@ img {
   margin-top: -45px;
 }
 
-.rewiews-slide__avatar {
+.rewiews-slider__avatar {
   width: 90px;
   height: 90px;
   border-radius: 50%;
@@ -1080,7 +1076,7 @@ img {
   margin-bottom: 9px;
 }
 
-.rewiews-slide__username {
+.rewiews-slider__username {
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: bold;
@@ -1089,7 +1085,7 @@ img {
   color: #EC1F46;
 }
 
-.rewiews-slide__date {
+.rewiews-slider__date {
   font-family: Mulish;
   font-style: normal;
   font-weight: normal;
@@ -1099,12 +1095,12 @@ img {
   margin-bottom: 4px;
 }
 
-.rewiews-slide__stars {
+.rewiews-slider__stars {
   width: 6px;
   height: 6px;
 }
 
-.rewiews-slide__text {
+.rewiews-slider__text {
   margin: 0;
   max-width: 537px;
   min-height: 114px;
@@ -1303,15 +1299,6 @@ img {
   .rewiews-slider__item {
     max-width: 580px;
   }
-<<<<<<< HEAD
-  .rewiews-slider__item::before {
-    content: '';
-    display: none;
-  }
-  .rewiews-slider__item::after {
-    content: '';
-    display: none;
-=======
   .activities {
     padding-bottom: 50px;
   }
@@ -1325,7 +1312,6 @@ img {
   .card {
     width: 340px;
     height: 255px;
->>>>>>> 671482bc75d775eddd3d4b253b550ed31cbfcd30
   }
 }
 
@@ -1593,7 +1579,6 @@ img {
     text-transform: uppercase;
     color: #333333;
   }
-<<<<<<< HEAD
   .rewiews__tittle {
     font-style: bold;
     font-size: 23px;
@@ -1629,7 +1614,7 @@ img {
   }
   .hotel-description__break {
     white-space: word-wrap;
-=======
+  }
   .activities-tittle {
     margin-bottom: 36px;
   }
@@ -1639,6 +1624,5 @@ img {
   }
   .card:last-child {
     margin: 0;
->>>>>>> 671482bc75d775eddd3d4b253b550ed31cbfcd30
   }
 }

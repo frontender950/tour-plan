@@ -10,6 +10,7 @@
     margin-top: 0
     margin-bottom: 70px
   &-slider
+    height: 100%
     &__item
       position: relative
       display: flex
@@ -37,7 +38,8 @@
         width: 70px
         height: 47px
         right: 62px
-        top: 118px
+        top:
+  &-slide
     &__button
       position: absolute
       top: 50%
@@ -54,9 +56,11 @@
       &--prev
         background-image: url(../img/arrow-secondary-prev.svg)
         left: 0
+        padding: 6px 10px
       &--next
         background-image: url(../img/arrow-secondary-next.svg)
         right: 0
+        padding: 6px 10px
     &__profile
       display: flex
       flex-direction: column

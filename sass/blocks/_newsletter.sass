@@ -29,6 +29,7 @@
     font-size: 24px
     line-height: 30px
     font-weight: 300
+    margin: 0
     &__strong
       text-transform: uppercase
       font-size: 36px
@@ -36,8 +37,6 @@
       font-weight: 600
       margin-top: 5px
 .subscribe
-  display: flex
-  flex-wrap: wrap
   position: relative
   width: 350px
   min-height: 55px
@@ -53,12 +52,16 @@
     line-height: 18px
     font-weight: 300
     padding-right: 75px
-    ::placeholder
+    &::placeholder
       color: $color-input
+      font-style: light
+      font-size: 14px
+      line-height: 18px
   &__button
     position: absolute
-    width: 65px
-    min-height: 55px
+    min-width: 65px
+    max-width: 30%
+    height: 55px
     overflow: visible
     color: $text-light
     background-color: $primary

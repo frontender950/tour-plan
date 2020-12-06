@@ -49,9 +49,24 @@
     width: 340px
     height: 210px
   .rewiews
+    &__tittle
+      margin-bottom: 50px
+      font-style: normal
+      font-weight: bold
+      font-size: 30px
+      line-height: 38px
+      text-align: center
+      text-transform: uppercase
+      color: $text-color
     &-slider
       &__item
         max-width: 580px
+        &::before
+          content: ''
+          display: none
+        &::after
+          content: ''
+          display: none
 @media ( max-width: 768px)
   .container
     max-width: 576px
@@ -122,6 +137,7 @@
     justify-content: space-between
     min-height: 450px
   .swiper-slide
+    height: 100%
     &__image
       max-width: 700px
       height: 450px
@@ -145,8 +161,7 @@
       margin-bottom: 37px
   .rewiews
     &__tittle
-      padding-bottom: 60px
-      margin: 0
+      margin-bottom: 42px
       font-style: normal
       font-weight: bold
       font-size: 30px
@@ -162,11 +177,11 @@
       &__button
         top: 32px
         &--prev
-          margin-left: -65px
+          margin-left: -85px
           left: 50%
           transform: translate(-50%, 0)
         &--next
-          margin-right: -65px
+          margin-right: -85px
           right: 50%
           transform: translate(50%, 0)
 @media ( max-width: 576px)
@@ -177,15 +192,18 @@
     width: 100%
     height: 180px
   .swiper-slide
-    height: 180px
+    height: 100%
     &__image
       width: 100%
       height: 180px
   .hotel
     padding-bottom: 40px
-    &__description
+    &-description
       margin-top: 0
       margin-bottom: 20px
+      white-space: pre-line
+      &__break
+        white-space: normal
     &-right
       display: flex
       flex-direction: column
@@ -211,6 +229,8 @@
         line-height: 38px
   .subscribe
     width: 100%
+    &__input
+      padding-left: 20px
   .rewiews
     padding-bottom: 50px
     font-style: normal
@@ -220,3 +240,33 @@
     text-align: center
     text-transform: uppercase
     color: $text-color
+    &__tittle
+      font-style: bold
+      font-size: 23px
+      line-height: 23px
+    &-slider
+      &__username
+        font-style: normal
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px
+        text-transform: none
+      &__date
+        text-transform: none
+        font-style: normal
+        font-weight: normal
+        font-size: 10px
+        line-height: 13px
+      &__text
+        text-transform: none
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 160%
+        text-align: left
+@media ( max-width: 440px)
+  .hotel
+    &-description
+      max-width: 280px
+      &__break
+        white-space: word-wrap

@@ -712,7 +712,6 @@ img {
 }
 
 .booking {
-  font-family: Nunito, sans-serif;
   width: 350px;
   height: 210px;
   background: #0A223D;
@@ -725,6 +724,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: Nunito, sans-serif;
   margin-bottom: 9px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -795,6 +795,7 @@ img {
           align-items: center;
   margin-bottom: 17px;
   font-weight: 600;
+  font-family: Nunito, sans-serif;
 }
 
 .booking .call-center__text {
@@ -921,30 +922,18 @@ img {
 
 .subscribe__input::-webkit-input-placeholder {
   color: #BDBDBD;
-  font-style: light;
-  font-size: 14px;
-  line-height: 18px;
 }
 
 .subscribe__input:-ms-input-placeholder {
   color: #BDBDBD;
-  font-style: light;
-  font-size: 14px;
-  line-height: 18px;
 }
 
 .subscribe__input::-ms-input-placeholder {
   color: #BDBDBD;
-  font-style: light;
-  font-size: 14px;
-  line-height: 18px;
 }
 
 .subscribe__input::placeholder {
   color: #BDBDBD;
-  font-style: light;
-  font-size: 14px;
-  line-height: 18px;
 }
 
 .subscribe__button {
@@ -1020,8 +1009,8 @@ img {
   background-repeat: no-repeat;
   width: 70px;
   height: 47px;
-  right: 62px;
-  top: 13px;
+  right: 60px;
+  top: 118px;
 }
 
 .rewiews-slider__button {
@@ -1181,7 +1170,7 @@ img {
 
 .card__content {
   margin-top: auto;
-  width: 203px;
+  max-width: 200px;
 }
 
 .card__tittle {
@@ -1299,6 +1288,9 @@ img {
   .rewiews-slider__item {
     max-width: 580px;
   }
+  .rewiews-slider__item::after, .rewiews-slider__item::before {
+    display: none;
+  }
   .activities {
     padding-bottom: 50px;
   }
@@ -1315,7 +1307,7 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     max-width: 576px;
     width: 92%;
@@ -1461,19 +1453,9 @@ img {
   }
   .rewiews__tittle {
     margin-bottom: 42px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 38px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #333333;
   }
   .rewiews-slider__item {
     padding: 0 30px 30px;
-  }
-  .rewiews-slider__item::after, .rewiews-slider__item::before {
-    display: none;
   }
   .rewiews-slider__button {
     top: 32px;
@@ -1581,7 +1563,7 @@ img {
   }
   .rewiews__tittle {
     font-style: bold;
-    font-size: 23px;
+    font-size: 18px;
     line-height: 23px;
   }
   .rewiews-slider__username {
@@ -1606,9 +1588,12 @@ img {
     line-height: 160%;
     text-align: left;
   }
+  .activities-tittle {
+    font-size: 18px;
+  }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 480px) {
   .hotel-description {
     max-width: 280px;
   }

@@ -66,6 +66,8 @@
     &-slider
       &__item
         max-width: 580px
+        &::after, &::before
+          display: none
   .activities
     padding-bottom: 50px
     &-wrapper
@@ -75,7 +77,7 @@
   .card
     width: 340px
     height: 255px
-@media ( max-width: 768px)
+@media ( max-width: 767px)
   .container
     max-width: 576px
     width: 92%
@@ -170,18 +172,9 @@
   .rewiews
     &__tittle
       margin-bottom: 42px
-      font-style: normal
-      font-weight: bold
-      font-size: 30px
-      line-height: 38px
-      text-align: center
-      text-transform: uppercase
-      color: $text-color
     &-slider
       &__item
         padding: 0 30px 30px
-        &::after, &::before
-          display: none
       &__button
         top: 32px
         &--prev
@@ -256,7 +249,7 @@
     color: $text-color
     &__tittle
       font-style: bold
-      font-size: 23px
+      font-size: 18px
       line-height: 23px
     &-slider
       &__username
@@ -278,7 +271,10 @@
         font-size: 12px
         line-height: 160%
         text-align: left
-@media ( max-width: 440px)
+  .activities
+    &-tittle
+      font-size: 18px
+@media ( max-width: 480px)
   .hotel
     &-description
       max-width: 280px

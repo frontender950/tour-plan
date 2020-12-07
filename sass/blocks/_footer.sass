@@ -1,0 +1,53 @@
+.footer
+  background-color: $dark
+  color: $text-light
+  padding-top: 108px
+  padding-bottom: 46px
+  &-wrapper
+    display: grid
+    grid-template-columns: repeat(4, minmax(min-content, 1fr))
+    grid-auto-rows: minmax(40px, min-content)
+    align-items: start
+  &__logo
+    grid-row: 1 / 3
+    width: 166px
+    align-self: stretch
+  &__categories
+    grid-row: 1 / 4
+  &__social
+    &-links
+      display: flex
+      min-width: 83px
+      align-items: center
+      justify-content: space-between
+    &-network
+      display: flex
+      align-items: center
+      grid-row: 2 / 4
+      grid-column: span 2
+  &__contact-details
+    grid-column: span 2
+  &-tittle
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    text-transform: uppercase
+    color: $text-light
+    margin-top: 0
+    margin-bottom: 16px
+    &_inline
+      margin: 0 43px 0 0
+  &__ul
+    padding: 0
+    list-style: none
+  &__item
+    color: $color-input
+    font-size: 14px
+    line-height: 160%
+    font-weight: normal
+    &--connection
+      color: $color-input
+      text-decoration: none
+  &__link
+    text-decoration: none
+    color: inherit

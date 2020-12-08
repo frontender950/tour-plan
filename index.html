@@ -16,19 +16,19 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="navbar">
+  <header class="navbar navbar--mobile_fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="https://aleksey-veselov.ru/homeworks/lesson-22/tour-plan/" class="logo">
+        <a href="https://aleksey-veselov.ru/homeworks/lesson-23/tour-plan/" class="logo">
           <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
-          <form action="#" class="search navbar__search">
+          <form action="#" class="search navbar__search navbar__search--mobile_hidden">
             <input type="text" class="search__input" placeholder="Search Location">
             <button class="search__button">
               <img src="img/search.svg" alt="Icon: search">
             </button>
           </form>
-          <a href="#" class="user navbar__user">
+          <a href="#" class="user navbar__user navbar__user--mobile_hidden">
             <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
             <span class="user__name">Nathan</span>
           </a>
@@ -45,6 +45,25 @@
     <div class="navbar-bottom">
     <div class="container">
       <nav class="navbar-menu">
+        <!-- mobile-menu-item -->
+        <ul class="navbar-menu__item-list">
+          <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+            <a href="#" class="user navbar__user navbar__user--mobile_visible">
+              <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
+              <span class="user__name user__name--light">Nathan</span>
+            </a>
+          </li>
+          <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+            <form action="#" class="search navbar__search navbar__search--mobile_visible">
+              <input type="text" class="search__input" placeholder="Search Location">
+              <button class="search__button">
+                <img src="img/search.svg" alt="Icon: search">
+              </button>
+            </form>
+          </li>
+          <li class="navbar-menu__item"></li>
+        </ul>
+        <!-- /.mobile-menu-item -->
         <ul class="navbar-menu__item-list">
           <li class="navbar-menu__item">
             <a href="#" class="navbar-menu__link">All Deals</a></li>
@@ -392,6 +411,7 @@
             <li class="footer__item"><a href="#" class="footer__link">Rodrigues</a></li>
           </ul>
         </div>
+        <!-- /.footer__list footer__categories-->
         <div class="footer__list footer__additional">
           <h3 class="footer-tittle">Additional information</h3>
           <ul class="footer__ul">
@@ -407,9 +427,9 @@
         <div class="footer__social-network">
           <h3 class="footer-tittle footer-tittle_inline">Social network</h3>
           <div class="footer__social-links">
-            <a href="" class="footer__link"><img src="img/facebook.svg" alt="icon facebook" class="footer__icon"></a>
-            <a href="" class="footer__link"><img src="img/youtube.svg" alt="icon youtube" class="footer__icon"></a>
-            <a href="" class="footer__link"><img src="img/instagram.svg" alt="icon instagram" class="footer__icon"></a>
+            <a href="https://ru-ru.facebook.com/" class="footer__link" target="_blank"><img src="img/facebook.svg" alt="icon facebook"></a>
+            <a href="https://www.youtube.com/" class="footer__link" target="_blank"><img src="img/youtube.svg" alt="icon youtube"></a>
+            <a href="https://www.instagram.com/" class="footer__link" target="_blank"><img src="img/instagram.svg" alt="icon instagram"></a>
           </div>
           <!-- /.footer__social-links -->
         </div>
@@ -428,19 +448,30 @@
           <h3 class="footer-tittle">Contact Details</h3>
           <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
           <ul class="footer__ul">
-            <li class="footer__item">
-              <img src="img/map-marker.svg" alt="icon map">
-              9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
+            <li class="footer__item footer__item--botm">
+              <div class="footer__icon-wrapper">
+                <img class="footer__icon" src="img/map-marker.svg" alt="icon map">
+              </div>
+              9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States <br>
             </li>
-            <li class="footer__item">
-              <img src="img/phone-call.svg" alt="icon phone-call">
-              Tel (business hours) : <a class="footer__item--connection" href="tel: 269 1500">269 1500</a> <br>
-              Tel (hotline) Monday - Saturday: <a class="footer__item--connection" href="tel: 52-56-61-38">52-56-61-38</a> (08:00 am – 20:00 pm)<br>
-              Tel (hotline) Sunday: <a class="footer__item--connection" href="tel: 52-56-61-38">52-56-61-38</a> (08:00 am – 14:00 pm)
+            <li class="footer__item footer__item--botm">
+              <div class="footer__icon-wrapper">
+                <img class="footer__icon" src="img/phone-call.svg" alt="icon phone-call">
+              </div>
+              <div class="footer__item-wrapper">
+                Tel (business hours) :
+                <a class="footer__item footer__item--connection" href="tel:269-1500">269 1500</a> <br>
+                Tel (hotline) Monday - Saturday:
+                <a class="footer__item footer__item--connection" href="tel:52-56-61-38">52-56-61-38</a> (08:00 am – 20:00 pm)<br>
+                Tel (hotline) Sunday:
+                <a class="footer__item footer__item--connection" href="tel:52-56-61-38">52-56-61-38</a> (08:00 am – 14:00 pm)
+              </div>
             </li>
-            <li class="footer__item">
-              <img src="img/email.svg" alt="icon email">
-              <a class="footer__item--connection" href="mailto: cherly.lawson@example.com">cherly.lawson@example.com</a> 
+            <li class="footer__item footer__item--botm">
+              <div class="footer__icon-wrapper">
+                <img class="footer__icon" src="img/email.svg" alt="icon email">
+              </div>
+              <a class="footer__item footer__item--connection" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a> 
             </li>
           </ul>
         </div>
@@ -455,12 +486,21 @@
             <span class="footer__info">* Required Fields</span>
           </form>
         </div>
+        <!-- /.footer__contact-form -->
+        <div class="footer__list footer__list--sub">
+          <ul class="footer__ul">
+            <li class="footer__item footer__item--sub">Disclaimer<a href="#" class="footer__link"></a></li>
+            <li class="footer__item footer__item--sub">Conditions of use<a href="#" class="footer__link"></a></li>
+            <li class="footer__item footer__item--sub">Cancellation policy<a href="#" class="footer__link"></a></li>
+          </ul>
+          <img src="img/payment-system.svg" alt="image card payment system" class="footer__payment-system">
+        </div>
+        <!-- /.footer__list -->
       </div>
       <!-- /.footer-wrapper -->
     </div>
     <!-- /.container -->
   </footer>
-</section>
 </section>
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>

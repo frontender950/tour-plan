@@ -25,8 +25,17 @@
       align-items: center
       grid-row: 2 / 4
       grid-column: span 2
-  &__contact-details
-    grid-column: span 2
+  &__contact
+    &-details
+      grid-column: span 2
+    &-form
+      grid-column: span 2
+      max-width: 539px
+  &__form
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
   &-tittle
     font-weight: bold
     font-size: 18px
@@ -41,13 +50,73 @@
     padding: 0
     list-style: none
   &__item
+    display: flex
+    align-items: flex-start
     color: $color-input
     font-size: 14px
     line-height: 160%
     font-weight: normal
+    &-wrapper
     &--connection
       color: $color-input
       text-decoration: none
+    &--botm
+      margin-bottom: 20px
+    &--sub
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $text-light
+  &__text
+    color: $color-input
+    margin-bottom: 22px
+  &__icon
+    &-wrapper
+      min-width: 40px
   &__link
     text-decoration: none
     color: inherit
+  &__input
+    background-color: $text-light
+    border-radius: 4px
+    border: none
+    padding: 0 23px
+    height: 50px
+    margin-bottom: 15px
+    flex-basis: 48%
+    &::placeholder
+      font-size: 12px
+      line-height: 15px
+      color: $color-input
+  &__message
+    background-color: $text-light
+    border-radius: 4px
+    padding: 18px 23px
+    border: none
+    flex-basis: 100%
+    margin-bottom: 22px
+    height: 123px
+    resize: none
+    &::placeholder
+      font-size: 12px
+      line-height: 15px
+      color: $color-input
+  &__button
+    min-width: 160px
+    min-height: 50px
+    padding: 18px
+    color: $text-light
+    background-color: $primary
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    border: none
+    border-radius: 4px
+  &__info
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: #E0E0E0

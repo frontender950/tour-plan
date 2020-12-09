@@ -460,11 +460,11 @@
               </div>
               <div class="footer__item-wrapper">
                 Tel (business hours) :
-                <a class="footer__item footer__item--connection" href="tel:269-1500">269 1500</a> <br>
-                Tel (hotline) Monday - Saturday:
-                <a class="footer__item footer__item--connection" href="tel:52-56-61-38">52-56-61-38</a> (08:00 am – 20:00 pm)<br>
-                Tel (hotline) Sunday:
-                <a class="footer__item footer__item--connection" href="tel:52-56-61-38">52-56-61-38</a> (08:00 am – 14:00 pm)
+                <a class="footer__link" href="tel:269-1500">269 1500</a> <br>
+                Tel (hotline) Monday - Saturday :
+                <a class="footer__link" href="tel:52-56-61-38">52-56-61-38</a> (08:00 am – 20:00 pm)<br>
+                Tel (hotline) Sunday :
+                <a class="footer__link" href="tel:52-56-61-38">52-56-61-38</a> (08:00 am – 14:00 pm)
               </div>
             </li>
             <li class="footer__item footer__item--botm">
@@ -478,10 +478,13 @@
         <!-- /.footer__contact-details -->
         <div class="footer__contact-form">
           <h3 class="footer-tittle">Send us a message</h3>
-          <form action="#" class="footer__form">
-            <input type="text" class="input footer__input" placeholder="Your Full Name">
-            <input type="text" class="input footer__input" placeholder="Phone Number">
-            <textarea cols="30" rows="10" class="footer__message" placeholder="Message"></textarea>
+          <form action="send.php" method="POST" class="footer__form">
+
+            <input type="text" class="input footer__input" placeholder="Your Full Name" name="name">
+            <input type="text" class="input footer__input" placeholder="Phone Number" name="phone">
+
+            <textarea class="footer__message" placeholder="Message" name="message"></textarea>
+
             <button class="button footer__button" type="submit">Send</button>
             <span class="footer__info">* Required Fields</span>
           </form>
@@ -502,6 +505,26 @@
     <!-- /.container -->
   </footer>
 </section>
+<div class="modal">
+  <div class="modal__overlay"></div>
+  <!-- /.modal__overlay -->
+  <div class="modal__dialog">
+    <a href="#" class="modal__close"><img src="img/close.svg" alt="icon close"></a>
+    <h3 class="modal-tittle">Send us a message</h3>
+    <form action="send.php" method="POST" class="modal__form">
+    
+      <input type="text" class="input modal__input" placeholder="Your Full Name" name="name">
+      <input type="text" class="input modal__input" placeholder="Phone Number" name="phone">
+    
+      <textarea class="modal__message" placeholder="Message" name="message"></textarea>
+    
+      <button class="button modal__button" type="submit">Send</button>
+      <span class="modal__info">* Required Fields</span>
+    </form>
+  </div>
+  <!-- /.modal__dialog -->
+</div>
+<!-- /.modal -->
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>

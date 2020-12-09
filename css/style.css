@@ -427,8 +427,8 @@ img {
 }
 
 .button {
-  min-width: 160px;
-  min-height: 50px;
+  width: 160px;
+  max-height: 50px;
   padding: 18px;
   color: #ffffff;
   background-color: #EC1F46;
@@ -1533,7 +1533,7 @@ img {
 
 .modal__message {
   width: 100%;
-  min-height: 123px;
+  height: 123px;
   resize: none;
 }
 
@@ -1702,6 +1702,21 @@ img {
     grid-column: span 5;
     -ms-grid-row: 4;
     grid-row: 4;
+  }
+  .modal__dialog {
+    padding: 33px 68px;
+  }
+  .modal__input {
+    height: 46px;
+  }
+  .modal__button {
+    width: 140px;
+    height: 46px;
+    padding: 14px;
+    font-size: 14px;
+  }
+  .modal__info {
+    font-size: 10px;
   }
 }
 
@@ -1933,6 +1948,10 @@ img {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .modal__dialog {
+    padding: 33px 50px;
+    width: 80%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2108,5 +2127,22 @@ img {
   }
   .card:last-child {
     margin: 0;
+  }
+  .modal__dialog {
+    width: 90%;
+    padding: 30px 30px;
+  }
+  .modal__input {
+    height: 40px;
+    padding: 0 10px;
+  }
+  .modal__message {
+    height: 80px;
+    padding: 10px 10px;
+  }
+  .modal__button {
+    width: 110px;
+    height: 42px;
+    font-size: 12px;
   }
 }

@@ -362,6 +362,85 @@ img {
   max-width: 100%;
 }
 
+.input {
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: none;
+  padding: 0 23px;
+  height: 50px;
+}
+
+.input::-webkit-input-placeholder {
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.input:-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.input::-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.input::placeholder {
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.message {
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 18px 23px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+.message::-webkit-input-placeholder {
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.message:-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.message::-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.message::placeholder {
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.button {
+  min-width: 160px;
+  min-height: 50px;
+  padding: 18px;
+  color: #ffffff;
+  background-color: #EC1F46;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 .navbar {
   background-color: #ffffff;
 }
@@ -1324,11 +1403,6 @@ img {
   font-weight: normal;
 }
 
-.footer__item--connection {
-  color: #BDBDBD;
-  text-decoration: none;
-}
-
 .footer__item--botm {
   margin-bottom: 20px;
 }
@@ -1356,89 +1430,17 @@ img {
 }
 
 .footer__input {
-  background-color: #ffffff;
-  border-radius: 4px;
-  border: none;
-  padding: 0 23px;
-  height: 50px;
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
 }
 
-.footer__input::-webkit-input-placeholder {
-  font-size: 12px;
-  line-height: 15px;
-  color: #BDBDBD;
-}
-
-.footer__input:-ms-input-placeholder {
-  font-size: 12px;
-  line-height: 15px;
-  color: #BDBDBD;
-}
-
-.footer__input::-ms-input-placeholder {
-  font-size: 12px;
-  line-height: 15px;
-  color: #BDBDBD;
-}
-
-.footer__input::placeholder {
-  font-size: 12px;
-  line-height: 15px;
-  color: #BDBDBD;
-}
-
 .footer__message {
-  background-color: #ffffff;
-  border-radius: 4px;
-  padding: 18px 23px;
-  border: none;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-bottom: 22px;
   height: 123px;
   resize: none;
-}
-
-.footer__message::-webkit-input-placeholder {
-  font-size: 12px;
-  line-height: 15px;
-  color: #BDBDBD;
-}
-
-.footer__message:-ms-input-placeholder {
-  font-size: 12px;
-  line-height: 15px;
-  color: #BDBDBD;
-}
-
-.footer__message::-ms-input-placeholder {
-  font-size: 12px;
-  line-height: 15px;
-  color: #BDBDBD;
-}
-
-.footer__message::placeholder {
-  font-size: 12px;
-  line-height: 15px;
-  color: #BDBDBD;
-}
-
-.footer__button {
-  min-width: 160px;
-  min-height: 50px;
-  padding: 18px;
-  color: #ffffff;
-  background-color: #EC1F46;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
 }
 
 .footer__info {
@@ -1479,6 +1481,50 @@ img {
   top: 17px;
   text-decoration: none;
   cursor: pointer;
+}
+
+.modal-tittle {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.modal__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.modal__input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.modal__message {
+  width: 100%;
+  min-height: 123px;
+  resize: none;
+}
+
+.modal__info {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #E0E0E0;
 }
 
 @media (max-width: 1200px) {

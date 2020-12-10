@@ -1,8 +1,7 @@
 .footer
   background-color: $dark
   color: $text-light
-  padding-top: 108px
-  padding-bottom: 46px
+  padding: 108px 0 46px 0
   &-wrapper
     display: grid
     grid-template-columns: repeat(4, minmax(min-content, 1fr))
@@ -46,13 +45,17 @@
     margin-bottom: 16px
     &_inline
       margin: 0 43px 0 0
-  &__ul
-    padding: 0
-    list-style: none
   &__list
     &--sub
       display: flex
-      align-items:
+      max-width: 696px
+      height: 22px
+      margin-right: 0
+  &__wrapper
+    &--sub
+  &__ul
+    padding: 0
+    list-style: none
   &__item
     display: flex
     align-items: flex-start
@@ -60,6 +63,7 @@
     font-size: 14px
     line-height: 160%
     font-weight: normal
+    text-decoration: none
     &--botm
       margin-bottom: 20px
     &--sub

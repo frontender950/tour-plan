@@ -1478,12 +1478,7 @@ img {
   opacity: 1;
 }
 
-.modal__dialog--visible {
-  visibility: visible;
-  opacity: 1;
-}
-
-.modal__dialog--scroll {
+.modal__dialog {
   position: fixed;
   max-width: 478px;
   top: 50%;
@@ -1499,7 +1494,11 @@ img {
   opacity: 0;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
-  overflow: auto;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__close {

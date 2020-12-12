@@ -951,7 +951,7 @@ img {
 .rewiews-slider__button {
   position: absolute;
   top: 40%;
-  transform: translateY(-50%);
+  transform: translateY(-60%);
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
@@ -1152,6 +1152,10 @@ img {
   justify-self: end;
 }
 
+.footer__contact--span {
+  height: 69px;
+}
+
 .footer__contact-details {
   grid-column: span 2;
 }
@@ -1199,7 +1203,6 @@ img {
 .footer__ul {
   padding: 0;
   list-style: none;
-  margin-top: 0;
 }
 
 .footer__ul--sub {
@@ -1247,7 +1250,7 @@ img {
 }
 
 .footer__link--sub {
-  margin-right: 7px;
+  margin-right: 8px;
 }
 
 .footer__input {
@@ -1302,6 +1305,8 @@ img {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s;
+  max-height: 100%;
+  overflow: auto;
 }
 
 .modal__dialog--visible {
@@ -1556,6 +1561,9 @@ img {
   }
   .navbar-menu__item--mobile_visible {
     display: block;
+  }
+  .navbar-menu__link {
+    line-height: 35px;
   }
   .user__name--light {
     color: #ffffff;

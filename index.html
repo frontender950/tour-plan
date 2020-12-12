@@ -19,7 +19,7 @@
   <header class="navbar navbar--mobile_fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="https://aleksey-veselov.ru/homeworks/lesson-23/tour-plan/" class="logo">
+        <a href="https://aleksey-veselov.ru/tour-plan/" class="logo">
           <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
           <form action="#" class="search navbar__search navbar__search--mobile_hidden">
@@ -445,8 +445,10 @@
         </div>
         <!-- /.footer-list -->
         <div class="footer__contact-details">
-          <h3 class="footer-tittle">Contact Details</h3>
-          <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
+          <div class="footer__contact--span">
+            <h3 class="footer-tittle">Contact Details</h3>
+            <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
+          </div>
           <ul class="footer__ul">
             <li class="footer__item footer__item--botm">
               <div class="footer__icon-wrapper">
@@ -494,7 +496,7 @@
       <!-- /.footer-wrapper -->
       <div class="footer__list footer__list--sub">
         <div class="footer__wrapper footer__wrapper--sub">
-          <ul class="footer__ul--sub">
+          <ul class="footer__ul footer__ul--sub">
             <li class="footer__item footer__item--sub">
               <a href="#" class="footer__link footer__link--sub">Disclaimer</a>
             </li>
@@ -538,8 +540,6 @@
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
-
-</body>
 <script>
   // Отправка данных на сервер
   function send(event, php) {
@@ -549,7 +549,7 @@
     req.open('POST', php, true);
     req.onload = function () {
       if (req.status >= 200 && req.status < 400) {
-        json = JSON.parse(this.response); // internet explorer 11
+        json = JSON.parse(this.response); // Ебанный internet explorer 11
         console.log(json);
 
         // ЗДЕСЬ УКАЗЫВАЕМ ДЕЙСТВИЯ В СЛУЧАЕ УСПЕХА ИЛИ НЕУДАЧИ
@@ -569,4 +569,6 @@
     req.send(new FormData(event.target));
   }
 </script>
+</body>
+
 </html>

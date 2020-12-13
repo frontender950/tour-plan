@@ -1711,7 +1711,14 @@ img {
   .footer__ul--legal {
     margin: 0;
   }
-  .modal__dialog {
+  .footer__contact-details {
+    display: grid;
+    grid-row: 4;
+  }
+  .footer__contact-form {
+    grid-row: 5;
+  }
+  .footer__dialog {
     padding: 33px 50px;
     width: 80%;
   }

@@ -396,8 +396,7 @@ img {
 
 .button {
   width: 160px;
-  max-height: 50px;
-  padding: 18px;
+  min-height: 45px;
   color: #ffffff;
   background-color: #EC1F46;
   font-style: normal;
@@ -787,10 +786,9 @@ img {
 
 .booking__button {
   width: 100%;
-  height: 45px;
+  min-height: 45px;
   font-size: 14px;
   line-height: 19px;
-  padding-top: 13px;
   font-weight: 600;
   color: #ffffff;
   background: #EC1F46;

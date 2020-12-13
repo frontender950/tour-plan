@@ -15,6 +15,12 @@
   .footer
     &__input
       flex-basis: 100%
+    &__additional
+      display: grid
+      grid-auto-columns: max-content
+    &__ul
+      &--additional
+        margin-top: 0
 @media ( max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -103,6 +109,8 @@
       grid-column: span 2
     &__additional
       grid-column: span 2
+    &__form
+      margin-bottom: 63px
     &__contact
       &-details
         grid-column: span 5
@@ -281,8 +289,12 @@
   .footer
     &__input
       flex-basis: 100%
-    &__categories
-
+    &__legal
+      display: grid
+      grid-row: 3
+    &__ul
+      &--legal
+        margin: 0
   .modal
     &__dialog
       padding: 33px 50px
@@ -389,7 +401,7 @@
     &__legal
       grid-row: 5
       grid-column: 1
-
+      justify-self: start
     &__contact
       &-details
         grid-row: 6
@@ -413,6 +425,14 @@
       margin: 0
   .footer
     padding-top: 69px
+    &__list
+      &--sub
+        flex-direction: column
+    &__ul
+      &--sub
+        margin-bottom: 10px
+    &__form
+      margin-bottom: 30px
   .search
     &__input
       width: 80%

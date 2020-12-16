@@ -183,7 +183,7 @@
               <span class="call-center__num">12100</span>
             </a>
           </div>
-          <button action="model.php" method="POST" data-toggle="modal" class="button booking__button">View Other Options</button>
+          <button type="submit" action="modal.php" method="POST" data-toggle="modal" class="button booking__button">View Other Options</button>
         </div>
         <!-- /.booking -->
         <div class="map">
@@ -201,9 +201,9 @@
     <h2 class="newsletter-tittle">subscribe to our
       <span class="newsletter-tittle__strong">Newsletter</span>
     </h2>
-    <form action="#" class="subscribe newsletter__subscribe">
-      <input type="text" class="subscribe__input" placeholder="Your email address">
-      <button action="subscribe.php" method="POST" class="subscribe__button">Send</button>
+    <form action="subscribe.php" method="POST" class="subscribe newsletter__subscribe">
+      <input type="text" class="subscribe__input" placeholder="Your email address" name="email">
+      <button class="subscribe__button" type="submit">Send</button>
     </form>
   </div>
   <!-- /.newsletter-wrapper -->
@@ -522,7 +522,7 @@
   <div class="modal__dialog">
     <a href="#" class="modal__close"><img src="img/close.svg" alt="icon close"></a>
     <h3 class="modal-tittle">Booking</h3>
-    <form action="send.php" method="POST" class="modal__form">
+    <form action="modal.php" method="POST" class="modal__form">
     
       <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
       <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">

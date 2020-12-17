@@ -408,6 +408,22 @@ img {
   cursor: pointer;
 }
 
+.button-home {
+  padding: 10px 20px;
+  width: 160px;
+  min-height: 45px;
+  color: #ffffff;
+  background-color: #EC1F46;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .navbar {
   background-color: #ffffff;
 }

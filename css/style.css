@@ -823,7 +823,7 @@ img {
 .newsletter {
   position: relative;
   padding: 98px 0 87px;
-  background-image: url(../img/newsletter-bg.jpg);
+  background: transparent;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1168,6 +1168,7 @@ img {
 
 .footer__contact--span {
   height: 69px;
+  margin-bottom: 22px;
 }
 
 .footer__contact-details {
@@ -1193,7 +1194,7 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   margin-top: 0;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
 .footer-tittle_inline {
@@ -1205,9 +1206,14 @@ img {
   justify-content: space-between;
 }
 
+.footer__additional {
+  margin-bottom: 24px;
+}
+
 .footer__ul {
   padding: 0;
   list-style: none;
+  margin: 0;
 }
 
 .footer__ul--sub {
@@ -1232,6 +1238,10 @@ img {
   margin-bottom: 20px;
 }
 
+.footer__item--botm:last-child {
+  margin-bottom: 0;
+}
+
 .footer__item--sub {
   font-style: normal;
   font-weight: normal;
@@ -1243,7 +1253,6 @@ img {
 .footer__text {
   color: #BDBDBD;
   margin-top: 0;
-  margin-bottom: 22px;
 }
 
 .footer__icon-wrapper {
@@ -1479,6 +1488,7 @@ img {
   }
   .footer {
     padding-top: 73px;
+    padding-bottom: 33px;
   }
   .footer-wrapper {
     grid-template-columns: repeat(6, 1fr);
@@ -1488,6 +1498,8 @@ img {
     flex-basis: 49%;
   }
   .footer__logo {
+    width: 104px;
+    height: 120px;
     grid-row: 1 / 2;
     grid-column: span 2;
   }
@@ -1507,7 +1519,7 @@ img {
     grid-column: span 2;
   }
   .footer__form {
-    margin-bottom: 63px;
+    margin-bottom: 56px;
   }
   .footer__contact-details {
     grid-column: span 5;
@@ -1844,8 +1856,11 @@ img {
   }
   .footer-wrapper {
     grid-template-columns: 1fr;
+    grid-row-gap: 30px;
   }
   .footer__logo {
+    width: 104px;
+    height: 120px;
     grid-row: 1;
     grid-column: 1;
   }
@@ -1855,7 +1870,7 @@ img {
   }
   .footer__additional {
     grid-row: 3;
-    grid-column: 1;
+    margin-bottom: 0;
   }
   .footer__categories {
     grid-row: 4;
@@ -1873,6 +1888,12 @@ img {
   .footer__contact-form {
     grid-row: 7;
     grid-column: 1;
+  }
+  .footer-tittle {
+    margin-bottom: 15px;
+  }
+  .footer-tittle_inline {
+    margin-bottom: 0;
   }
 }
 
@@ -1895,12 +1916,16 @@ img {
   }
   .footer {
     padding-top: 69px;
+    padding-bottom: 21px;
   }
   .footer__list--sub {
     flex-direction: column;
   }
   .footer__ul--sub {
     margin-bottom: 10px;
+  }
+  .footer__payment-system {
+    width: 136px;
   }
   .footer__form {
     margin-bottom: 30px;

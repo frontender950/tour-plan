@@ -29,6 +29,7 @@
   &__contact
     &--span
       height: 69px
+      margin-bottom: 22px
     &-details
       grid-column: span 2
     &-form
@@ -46,16 +47,19 @@
     text-transform: uppercase
     color: $text-light
     margin-top: 0
-    margin-bottom: 22px
+    margin-bottom: 24px
     &_inline
       margin: 0 43px 0 0
   &__list
     &--sub
       display: flex
       justify-content: space-between
+  &__additional
+    margin-bottom: 24px
   &__ul
     padding: 0
     list-style: none
+    margin: 0
     &--sub
       display: flex
       padding: 0
@@ -72,6 +76,8 @@
     text-decoration: none
     &--botm
       margin-bottom: 20px
+      &:last-child
+        margin-bottom: 0
     &--sub
       font-style: normal
       font-weight: normal
@@ -81,7 +87,6 @@
   &__text
     color: $color-input
     margin-top: 0
-    margin-bottom: 22px
   &__icon
     &-wrapper
       min-width: 40px

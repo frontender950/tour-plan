@@ -196,7 +196,7 @@
   </div>
   <!-- /.container -->
 </section>
-<section class="newsletter" data-parallax="scroll" data-image-src="../img/newsletter-bg.jpg">
+<section class="newsletter" data-parallax="scroll" data-image-src="img/newsletter-bg.jpg">
   <div class="newsletter-wrapper">
     <h2 class="newsletter-tittle">subscribe to our
       <span class="newsletter-tittle__strong">Newsletter</span>
@@ -427,9 +427,9 @@
         <div class="footer__social-network">
           <h3 class="footer-tittle footer-tittle_inline">Social network</h3>
           <div class="footer__social-links">
-            <a href="https://ru-ru.facebook.com/" class="footer__link" target="_blank"><img src="img/facebook.svg" alt="icon facebook"></a>
-            <a href="https://www.youtube.com/" class="footer__link" target="_blank"><img src="img/youtube.svg" alt="icon youtube"></a>
-            <a href="https://www.instagram.com/" class="footer__link" target="_blank"><img src="img/instagram.svg" alt="icon instagram"></a>
+            <a href="https://ru-ru.facebook.com/" class="footer__link" target="_blank"><img class="footer__link footer__link--img" src="img/facebook.svg" alt="icon facebook"></a>
+            <a href="https://www.youtube.com/" class="footer__link" target="_blank"><img class="footer__link footer__link--img" src="img/youtube.svg" alt="icon youtube"></a>
+            <a href="https://www.instagram.com/" class="footer__link" target="_blank"><img class="footer__link footer__link--img" src="img/instagram.svg" alt="icon instagram"></a>
           </div>
           <!-- /.footer__social-links -->
         </div>
@@ -487,8 +487,10 @@
 
             <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
 
-            <button class="button footer__button" type="submit">Send</button>
-            <span class="footer__info">* Required Fields</span>
+            <div class="footer__button-block">
+              <button class="button footer__button" type="submit">Send</button>
+              <span class="footer__info">* Required Fields</span>
+            </div>
           </form>
         </div>
         <!-- /.footer__contact-form -->

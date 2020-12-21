@@ -105,6 +105,7 @@
         grid-row: 1 / 2
         grid-column: span 4
         align-self: center
+        margin-left: -14px
     &__categories
       grid-row: 2 / 3
       grid-column: span 2
@@ -400,8 +401,19 @@
       grid-column: 1
     &__social
       &-network
+        display: flex
+        flex-direction: column
+        width: 167px
+        margin-left: 0
         grid-row: 2
         grid-column: 1
+      &-links
+        margin-left: 0
+        width: 167px
+        display: block
+    &__link
+      &--img
+        margin-right: 12px
     &__additional
       grid-row: 3
       grid-column:
@@ -424,6 +436,8 @@
       margin-bottom: 15px
       &_inline
         margin-bottom: 0
+        margin-right: 0
+        margin-bottom: 22px
 @media ( max-width: 480px)
   .hotel
     &-description
@@ -451,6 +465,17 @@
       width: 136px
     &__form
       margin-bottom: 30px
+    &__message
+      margin-bottom: 15px
+    &__button-block
+      flex-direction: column
+      width: 160px
+      align-items: flex-start
+    &__button
+      order: 2
+    &__info
+      order: 1
+      margin-bottom: 15px
   .search
     &__input
       width: 80%

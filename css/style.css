@@ -1418,6 +1418,9 @@ img {
   .footer__ul--additional {
     margin-top: 0;
   }
+  .modal__dialog {
+    padding: 33px 60px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1549,7 +1552,7 @@ img {
     margin: 0;
   }
   .modal__dialog {
-    padding: 33px 68px;
+    padding: 33px 55px;
   }
   .modal__input {
     height: 46px;
@@ -1765,7 +1768,7 @@ img {
   .footer__contact-form {
     grid-row: 5;
   }
-  .footer__dialog {
+  .modal__dialog {
     padding: 33px 50px;
     width: 80%;
   }
@@ -1998,7 +2001,7 @@ img {
     padding: 10px 10px;
   }
   .modal__button {
-    width: 110px;
+    width: 120px;
     height: 42px;
     font-size: 12px;
   }

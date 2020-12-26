@@ -1,8 +1,7 @@
 $(document).ready(function () {
-    var hotelSlider = new Swiper('.hotel-slider', {
-
+  // слайдер-1
+  var hotelSlider = new Swiper('.hotel-slider', {
     loop: true,
-
     navigation: {
       nextEl: '.hotel-slider__button--next',
       prevEl: '.hotel-slider__button--prev',
@@ -15,16 +14,16 @@ $(document).ready(function () {
     },
   })
 
+  // слайдер-2
   var rewiewsSlider = new Swiper('.rewiews-slider', {
-
     loop: true,
-
     navigation: {
       nextEl: '.rewiews-slider__button--next',
       prevEl: '.rewiews-slider__button--prev',
     },
   })
 
+  // мобильное меню
   var menuButton = document.querySelector(".menu-button");
   menuButton.addEventListener("click", function () {
     console.log('Клик по кнопке меню');
@@ -33,7 +32,7 @@ $(document).ready(function () {
       .classList.toggle("navbar-bottom--visible");
   });
 
-  // modalWindow
+  // модальное окно
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
   modalButton.on("click", openModal);
